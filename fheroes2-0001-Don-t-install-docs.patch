@@ -1,0 +1,21 @@
+From: Peter Lemenkov <lemenkov@gmail.com>
+Date: Fri, 10 Feb 2023 18:11:46 +0100
+Subject: [PATCH] Don't install docs
+
+Signed-off-by: Peter Lemenkov <lemenkov@gmail.com>
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 0e506cd8..7eadb51f 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -125,10 +125,6 @@ if(NOT MACOS_APP_BUNDLE)
+ 		FILES_MATCHING
+ 		PATTERN *.h2d
+ 		)
+-	install(
+-		FILES docs/README.txt LICENSE changelog.txt
+-		DESTINATION ${CMAKE_INSTALL_DOCDIR}
+-		)
+ 
+ 	if(GET_HOMM2_DEMO)
+ 		include(FetchContent)

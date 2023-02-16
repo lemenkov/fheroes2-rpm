@@ -1,0 +1,27 @@
+From: Peter Lemenkov <lemenkov@gmail.com>
+Date: Fri, 10 Feb 2023 18:14:40 +0100
+Subject: [PATCH] Don't install scripts
+
+Signed-off-by: Peter Lemenkov <lemenkov@gmail.com>
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 7eadb51f..deaf76f0 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -175,16 +175,6 @@ if(NOT MACOS_APP_BUNDLE)
+ 			FILES_MATCHING
+ 			PATTERN *.mo
+ 			)
+-		install(
+-			FILES script/demo/download_demo_version.sh
+-			PERMISSIONS OWNER_EXECUTE OWNER_WRITE OWNER_READ GROUP_EXECUTE GROUP_READ WORLD_EXECUTE WORLD_READ
+-			DESTINATION ${CMAKE_INSTALL_DOCDIR}/demo
+-			)
+-		install(
+-			FILES script/homm2/extract_homm2_resources.sh
+-			PERMISSIONS OWNER_EXECUTE OWNER_WRITE OWNER_READ GROUP_EXECUTE GROUP_READ WORLD_EXECUTE WORLD_READ
+-			DESTINATION ${CMAKE_INSTALL_DOCDIR}/homm2
+-			)
+ 		install(
+ 			FILES script/packaging/common/fheroes2.appdata.xml
+ 			DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/metainfo
