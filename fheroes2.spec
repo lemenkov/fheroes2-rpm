@@ -31,7 +31,6 @@ export LANG=en_US.UTF-8
     -DFHEROES2_DATA="%{_datadir}/%{name}" \
     -DUSE_SDL_VERSION=SDL2 \
     -DENABLE_IMAGE=ON
-#    -DENABLE_TOOLS=ON
 
 %cmake_build
 
