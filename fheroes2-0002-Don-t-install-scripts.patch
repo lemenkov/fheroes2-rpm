@@ -5,10 +5,10 @@ Subject: [PATCH] Don't install scripts
 Signed-off-by: Peter Lemenkov <lemenkov@gmail.com>
 
 diff --git a/CMakeLists.txt b/CMakeLists.txt
-index 7eadb51f..deaf76f0 100644
+index e26328e5..e7ae2688 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
-@@ -175,16 +175,6 @@ if(NOT MACOS_APP_BUNDLE)
+@@ -184,16 +184,6 @@ if(NOT MACOS_APP_BUNDLE)
  			FILES_MATCHING
  			PATTERN *.mo
  			)
