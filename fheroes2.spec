@@ -44,7 +44,7 @@ mkdir -p %{buildroot}%{_datadir}/%{name}/maps/
 %license LICENSE
 %doc README.md changelog.txt
 %{_bindir}/%{name}
-%{_datadir}/metainfo/%{name}.appdata.xml
+%{_datadir}/metainfo/%{name}.metainfo.xml
 %{_datadir}/icons/hicolor/*/apps/%{name}.png
 %{_datadir}/applications/%{name}.desktop
 %dir %{_datadir}/%{name}/
