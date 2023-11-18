@@ -5,7 +5,7 @@ Subject: [PATCH] Don't install docs
 Signed-off-by: Peter Lemenkov <lemenkov@gmail.com>
 
 diff --git a/CMakeLists.txt b/CMakeLists.txt
-index f6ed02bb..e26328e5 100644
+index dc3ec02c..e72ab7a1 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
 @@ -134,10 +134,6 @@ if(NOT MACOS_APP_BUNDLE)
