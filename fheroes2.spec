@@ -1,8 +1,8 @@
 Name: fheroes2
-Version: 1.0.11
+Version: 1.0.12
 Release: %autorelease
 Summary: Free implementation of the popular game engine
-License: GPLv2+
+License: GPL-2.0-or-later
 URL: https://github.com/ihhub/fheroes2
 Source0: https://github.com/ihhub/%{name}/archive/%{version}/%{name}-%{version}.tar.gz
 Patch1: fheroes2-0001-Don-t-install-docs.patch
