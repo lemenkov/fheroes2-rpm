@@ -1,5 +1,5 @@
 Name: fheroes2
-Version: 1.0.12
+Version: 1.0.13
 Release: %autorelease
 Summary: Free implementation of the popular game engine
 License: GPL-2.0-or-later
