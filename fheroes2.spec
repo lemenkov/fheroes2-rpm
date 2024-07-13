@@ -5,8 +5,6 @@ Summary: Free implementation of the popular game engine
 License: GPL-2.0-or-later
 URL: https://github.com/ihhub/fheroes2
 Source0: %{url}/archive/%{version}/%{name}-%{version}.tar.gz
-#Patch1: fheroes2-0001-Don-t-install-docs.patch
-#Patch2: fheroes2-0002-Don-t-install-scripts.patch
 BuildRequires: SDL2_image-devel
 BuildRequires: SDL2_mixer-devel
 BuildRequires: SDL2_net-devel
@@ -36,6 +34,13 @@ export LANG=en_US.UTF-8
 
 %install
 %cmake_install
+
+# Remove files we'll install differently
+rm -f  %{buildroot}%{_datadir}/%{name}/LICENSE
+rm -f  %{buildroot}%{_datadir}/%{name}/README.txt
+rm -f  %{buildroot}%{_datadir}/%{name}/demo/download_demo_version.sh
+rm -r  %{buildroot}%{_datadir}/%{name}/demo/
+rm -f  %{buildroot}%{_datadir}/%{name}/extract_homm2_resources.sh
 
 mkdir -p %{buildroot}%{_datadir}/%{name}/files/data/
 mkdir -p %{buildroot}%{_datadir}/%{name}/maps/
