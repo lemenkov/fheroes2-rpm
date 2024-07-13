@@ -36,13 +36,13 @@ export LANG=en_US.UTF-8
 %cmake_install
 
 # Remove files we'll install differently
-rm -f  %{buildroot}%{_datadir}/%{name}/LICENSE
-rm -f  %{buildroot}%{_datadir}/%{name}/README.txt
-rm -f  %{buildroot}%{_datadir}/%{name}/demo/download_demo_version.sh
-rm -d  %{buildroot}%{_datadir}/%{name}/demo/
-rm -f  %{buildroot}%{_datadir}/%{name}/homm2/extract_homm2_resources.sh
-rm -d  %{buildroot}%{_datadir}/%{name}/homm2/
-rm -f  %{buildroot}%{_datadir}/%{name}/changelog.txt
+rm -f  %{buildroot}%{_docdir}/%{name}/LICENSE
+rm -f  %{buildroot}%{_docdir}/%{name}/README.txt
+rm -f  %{buildroot}%{_docdir}/%{name}/changelog.txt
+rm -f  %{buildroot}%{_docdir}/%{name}/demo/download_demo_version.sh
+rm -f  %{buildroot}%{_docdir}/%{name}/homm2/extract_homm2_resources.sh
+rm -d  %{buildroot}%{_docdir}/%{name}/demo/
+rm -d  %{buildroot}%{_docdir}/%{name}/homm2/
 
 mkdir -p %{buildroot}%{_datadir}/%{name}/files/data/
 mkdir -p %{buildroot}%{_datadir}/%{name}/maps/
