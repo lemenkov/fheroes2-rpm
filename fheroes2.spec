@@ -39,8 +39,10 @@ export LANG=en_US.UTF-8
 rm -f  %{buildroot}%{_datadir}/%{name}/LICENSE
 rm -f  %{buildroot}%{_datadir}/%{name}/README.txt
 rm -f  %{buildroot}%{_datadir}/%{name}/demo/download_demo_version.sh
-rm -r  %{buildroot}%{_datadir}/%{name}/demo/
-rm -f  %{buildroot}%{_datadir}/%{name}/extract_homm2_resources.sh
+rm -d  %{buildroot}%{_datadir}/%{name}/demo/
+rm -f  %{buildroot}%{_datadir}/%{name}/homm2/extract_homm2_resources.sh
+rm -d  %{buildroot}%{_datadir}/%{name}/homm2/
+rm -f  %{buildroot}%{_datadir}/%{name}/changelog.txt
 
 mkdir -p %{buildroot}%{_datadir}/%{name}/files/data/
 mkdir -p %{buildroot}%{_datadir}/%{name}/maps/
