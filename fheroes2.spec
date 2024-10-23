@@ -1,9 +1,10 @@
 Name: fheroes2
-Version: 1.1.2
+Version: 1.1.3
 Release: %autorelease
 Summary: Free implementation of the popular game engine
 License: GPL-2.0-or-later
 URL: https://github.com/ihhub/fheroes2
+VCS: git:%{url}.git
 Source0: %{url}/archive/%{version}/%{name}-%{version}.tar.gz
 BuildRequires: SDL2_image-devel
 BuildRequires: SDL2_mixer-devel
